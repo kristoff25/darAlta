@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            border-radius: solid gray 10px;
+            padding: 10px;
+            background-color: aqua;
+            width: 30vw;
+        }
+
+        label {
+            padding: 10px;
+            font-size: 1.2rem;
+        }
+
+        #boton {
+            background-color: cornflowerblue;
+            color: white;
+            padding: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-top: 10px;
+
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <h1>Dar de Alta Usuarios</h1>
+            <label for="id">ID:</label>
+            <input type="text" id="id" name="id"><br>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"><br>
+
+            <label for="contrasenia">Contraseña:</label>
+            <input type="password" id="contrasenia" name="contrasenia"><br>
+
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha"><br>
+
+            <center><input type="submit" value="Guardar" id="boton"></center>
+        </form>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Contraseña</th>
+                <th>Fecha</th>
+                <th>Acciones</th> <!-- Agrega una columna adicional para el botón de eliminar -->
+            </tr>
+        </thead>
+        <tbody id="entries-table">
+        </tbody>
+    </table>
+
+    <!-- <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Contraseña</th>
+                <th>Fecha</th>
+            </tr>
+        </thead>
+        <tbody id="entries-table">
+        </tbody>
+    </table> -->
+
+    <script src="app.js"></script>
+</body>
+
+</html>
